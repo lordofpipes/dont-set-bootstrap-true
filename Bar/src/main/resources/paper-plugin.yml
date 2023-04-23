@@ -1,0 +1,13 @@
+name: Bar
+version: 1.0.0
+main: bar.Bar
+load: STARTUP
+author: lordpipe
+api-version: 1.19
+dependencies:
+- name: Foo
+  required: true
+  bootstrap: true
+load-after:
+- name: Foo
+  bootstrap: true
